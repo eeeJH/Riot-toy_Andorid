@@ -93,31 +93,83 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/title1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:ellipsize="end"
-                        android:text="Title111" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/title1"
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:ellipsize="end"
-                        android:text="Title111" />
+                        android:weightSum="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/play_kill"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:text="4/" />
+
+                            <TextView
+                                android:id="@+id/play_die"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:text="7"
+                                android:textColor="@color/red" />
+
+                            <TextView
+                                android:id="@+id/play_assist"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:text="/8" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/play_kill_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:text="킬 관여 22%" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:weightSum="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/play_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:text="개인/2인 랭크" />
+
+                        <TextView
+                            android:id="@+id/play_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:layout_weight="1"
+                            android:text="2분 전" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
-
-
             </LinearLayout>
 
 
@@ -133,14 +185,58 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/play_item1"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                <ImageView
+                    android:id="@+id/play_item2"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                <ImageView
+                    android:id="@+id/play_item3"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                <ImageView
+                    android:id="@+id/play_item4"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                <ImageView
+                    android:id="@+id/play_item5"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+                <ImageView
+                    android:id="@+id/play_item6"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
+
+                <ImageView
+                    android:id="@+id/play_item7"
+                    style="@style/SpellAndRunes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_launcher_foreground" />
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/play_kill_special"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
-                    android:text="Title1" />
+                    android:text="쿼드라킬" />
 
             </LinearLayout>
 
